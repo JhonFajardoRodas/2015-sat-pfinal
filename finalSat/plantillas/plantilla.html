@@ -1,0 +1,132 @@
+
+<html>
+	<head>
+		<title>Eventos de la Comunidad de Madrd !</title>
+		<style type="text/css">
+            body {
+
+            font-family: Georgia, "Times New Roman",Times, serif;
+            background-image: url("http://www.gorsegnerbrothers.com/wp-content/themes/organic_theme_ocean/images/white-fade.png");
+            background-border: red 5px double;
+            background-size: 100px 50px;
+            background-size: 65% 85%;
+            background-repeat:  repeat-y;
+            background-position: 50% 50%;
+            background-attachment: fixed;
+            background-color: default;
+            color: {{lista.color}};
+            
+
+
+            }
+
+         p {
+            font: oblique 120% sans-serif bold; 
+            color: {{lista.color}};
+         }
+
+               
+         #menu{
+            position: fixed;
+            right:10;
+            top:0px;
+            width:100px;
+            border-top: 1px solid #ff9999;
+            border-right: 2px solid #99ff99;   
+            border-bottom: 2px solid #9999ff;
+            border-left: 4px solid #666666;
+            text-align:center;
+            background-color:{{lista.color}};
+
+
+            }
+         
+         #misEventos{
+            
+            width: 60%;
+            float: left;
+            margin: 0px 0px 0px 0px;
+            text-align: justify;
+            font-size: {{lista.size}};
+
+         }
+         #usuarios{
+            
+            width: 30%;
+            float: left;
+            margin: 0px 0px 0px 0px;
+            text-align: justify;
+            font-size: {{lista.size}};
+
+         }
+       
+         #copy{
+            width: 60%;
+            float: left;
+            margin: 0px 0px 0px 0px;
+            text-align: justify;
+            background-color: {{lista.color}};
+         }
+         #login{
+            background-color: {{lista.color}};
+         }
+         #banner{
+            border-color: {{lista.color}};
+         }
+
+        
+      </style>
+	</head>
+	<body>
+		
+		<div id = 'login'>
+			{% if logueo = 'Registro' %}
+				<p><a href="http://localhost:1234/loguear/">{{logueo}}</a></p>
+			{%else%}
+				<p>{{logueo}}</p>
+				<p><a href="http://localhost:1234/expulsar/">Logout</a></p>
+			{% endif %}
+		</div>
+		
+		<div id = 'banner'>
+			<center>
+				<img src="https://lh3.googleusercontent.com/-hhVbNENRIUg/U7P4scJmQiI/AAAAAAAAAQg/Tn1I8T5lI3Q/w800-h240/Banner%2BForo%2BAudiovisual%2B%2528Arte-Cultura-Ocio%2529.jpg" border=0 Height=300></img>
+			</center>
+		</div>
+		
+		<div id='menu'>
+			<p><strong>MENU</strong></p>
+			<p><a href="http://localhost:1234/todas/" style="color:red">Todos</a></p>
+			<p><a href="http://localhost:1234/" style="color:red">Inicio</a></p>
+			<p><a href="http://localhost:1234/ayuda/" style="color:red">Ayuda</a></p>
+			{%if dentro %}
+				<p><a href="http://localhost:1234/{{usuario}}" style="color:red">Mi pagina</a></p>
+			{%endif%}
+		</div>
+		
+		<div id= 'misEventos'>
+			<p><strong>Eventos:</strong></p>
+			{% for line in allEventosProx %}
+				<p><a href="http://localhost:1234/actividades/{{line.id}}">{{line.titulo}}</a></p>
+		    {% endfor %}
+
+		</div>
+		<div id='usuarios'>
+			<p><strong>Usuarios Registrados:</strong></p>
+			{%for line in usuarios%}
+				<p>Usuario:<a href="http://localhost:1234/{{line.nombre}}">{{line.nombre}}</a></p>
+				<p>Titulo de la pagina: {{line.tituloPag}}</p>
+				<p>Descripcion: {{line.descripcion}}</p>
+			{%endfor%}
+		</div>
+		
+		
+
+		<div id="copy">
+            <strong>&copy; 2015 Jhon Fajardo Rodas</strong>
+        </id>
+            
+
+	</body>
+
+</html>

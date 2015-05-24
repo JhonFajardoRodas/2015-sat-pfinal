@@ -1,0 +1,106 @@
+<html>
+   <head>
+      <title>Evento !</title>
+      <style type="text/css">
+            body {
+
+            font-family: Georgia, "Times New Roman",Times, serif;
+            background-image: url("http://www.gorsegnerbrothers.com/wp-content/themes/organic_theme_ocean/images/white-fade.png");
+            background-border: red 5px double;
+            background-size: 100% 100%;
+            background-repeat:  repeat-y;
+            background-position: 50% 50%;
+            background-attachment: fixed;
+            background-color: transparent;;
+
+            }
+
+         p {
+            font: oblique 120% sans-serif bold; 
+            color: {{lista.color}};
+         }
+
+               
+         #menu{
+            position: fixed;
+            right:10;
+            top:0px;
+            width:100px;
+            border-top: 1px solid #ff9999;
+            border-right: 2px solid #99ff99;   
+            border-bottom: 2px solid #9999ff;
+            border-left: 4px solid #666666;
+            text-align:center;
+            background-color:{{lista.color}};
+
+
+            }
+         
+       
+         #copy{
+            width: 60%;
+            float: left;
+            margin: 0px 0px 0px 0px;
+            text-align: justify;
+            background-color: {{lista.color}};
+         }
+         #login{
+            background-color: {{lista.color}};
+         }
+         #banner{
+            border-color: {{lista.color}};
+         }
+
+        
+      </style>
+   </head>
+   <body>
+      <div id = 'login'>
+         {%if dentro%}
+               <p>Bienvenid@:{{usuario}}</p>
+               <p><a href="http://localhost:1234/expulsar/">Logout</a></p>
+         {%endif%}
+      </div>
+      <div id='banner'>
+         <center>
+            <img src="https://lh3.googleusercontent.com/-hhVbNENRIUg/U7P4scJmQiI/AAAAAAAAAQg/Tn1I8T5lI3Q/w800-h240/Banner%2BForo%2BAudiovisual%2B%2528Arte-Cultura-Ocio%2529.jpg" border=0 Height=300></img>
+         </center>
+      </div>
+
+      <div id='menu'>
+         <p><strong>MENU</strong></p>
+         <p><a href="http://localhost:1234/todas/" style="color:red">Todos</a></p>
+         <p><a href="http://localhost:1234/" style="color:red">Inicio</a></p>
+         {%if dentro %}
+            <p><a href="http://localhost:1234/{{usuario}}" style="color:red">Mi pagina</a></p>
+         {%endif%}
+      </div>
+      <div id='descripcion'>
+         <p><strong>{{Titulo}}</strong></p>
+         <p>Bienvenido a una pequeña ayuda del funcionamiento de 
+         	nuestra pagina:</p>
+
+         <p>En la pagina principal encontraras los 10 eventos que estan sucediendo ahora mismo en la comunidad
+            de Madrid, y una lista con las paginas personales de los usurios registrados.</p>
+         <p>En la parte superior derecha encontraras un pequeño menu, donde econtraras algunos enlaces que te
+            te llevaren a distintas paginas de nuestra aplicacion:</p>
+         <p><li>El boton <strong>Inicio</strong>, te llevara a la pagina principal de Eventos Madrid.</li></p>
+         <p><li>El boton <strong>Todos</strong> te mostrara todos los eventos de la comunidad de Madrid, si estas 
+            regitrado en nuestra pagina, te daremos la opcion de elegir los mas atractivos para ti pinchando en 
+             <strong>Selecionar.</strong></li></p>
+         <p><li>El boton <strong>Ayuda</strong> te traera a esta pagina.</li></p>
+         <p><p>En la parte superior a la aizquierda, encontraras el boton <strong>Login</strong>, donde podras iniciar sesion 
+            en nuestra pagina, y poder acceder a tu pagina personal, donde alamcenaras tus eventos favoritos, cambiar el aspecto de
+            la misma, ponerle un titulo, añadirle una pequeña descripcion, y visitar las paginas de otros usuarios, tambien 
+            al estar registrados podras filtrar los eventos por, fechas, precios, y tipo, y asi poder elegir el que mas te guste.
+         </p></p>
+      </div> 
+           
+      <div id="copy">
+            <strong>&copy; 2015 Jhon Fajardo Rodas</strong>
+      </id>
+            
+
+   </body>
+
+</html>

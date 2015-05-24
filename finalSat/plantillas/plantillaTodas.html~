@@ -1,0 +1,40 @@
+
+<html>
+	<head>
+		<title>Eventos de la Comunidad de Madrd !</title>
+	</head>
+	<body>
+		<center>
+			<img src="https://lh3.googleusercontent.com/-hhVbNENRIUg/U7P4scJmQiI/AAAAAAAAAQg/Tn1I8T5lI3Q/w800-h240/Banner%2BForo%2BAudiovisual%2B%2528Arte-Cultura-Ocio%2529.jpg" border=0 Height=300></img>
+		</center>
+		<p><strong>Fecha de ultima actualizacion: {{fechaActual}}</strong></p>
+		<form action="" method="POST">
+		'<h4>Filatrar por: <input type= "text" name="valor"</h4>'
+		'<input type="submit">'
+		'</form>'
+
+		
+		<p><a href="http://localhost:1234/todas/" style="color:red">Todos los eventos</a></p>
+		<p><a href="http://localhost:1234/" style="color:red">Inicio</a></p>
+		<p><a href="http://localhost:1234/actualizar" style="color:red">Actualizar Eventos</a></p>
+		
+		
+		
+		<p><strong>Numero de eventos disponibles: {{num_eventos}}</strong></p>
+		{% for line in total %}
+			<p><a href="http://localhost:1234/actividades/{{line.id}}">{{line.titulo}}</a></p>
+		{% endfor %}
+		{%if fallo %}
+			<p><strong>{{fallo}} </strong></p>
+			<p><a href="http://localhost:1234/todas/">Volver a todas</a></p>
+		{% endif %}
+		{% if logueo = 'Registro' %}
+			<p><a href="http://localhost:1234/loguear/">{{logueo}}</a></p>
+		{%else%}
+			<p>{{logueo}}</p>
+			<p><a href="http://localhost:1234/expulsar/">Logout</a></p>
+		{% endif %}
+		
+	</body>
+
+</html>

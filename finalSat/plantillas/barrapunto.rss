@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://barrapunto.com/">
+<title>Barrapunto</title>
+<link>http://barrapunto.com/</link>
+<description>La informaci&#243;n que te interesa</description>
+<dc:language>EN</dc:language>
+<dc:rights>Copyleft 1999-2006, Barrapunto</dc:rights>
+<dc:date>2015-04-11T19:10:12+00:00</dc:date>
+<dc:publisher>Barrapunto S.L.</dc:publisher>
+<dc:creator>webmaster@barrapunto.com</dc:creator>
+<dc:subject>Tecnolog&#237;a, Software libre</dc:subject>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://americas.barrapunto.com/article.pl?sid=15/04/09/1810202&amp;from=rss" />
+  <rdf:li rdf:resource="http://barrapunto.com/article.pl?sid=15/04/08/2156241&amp;from=rss" />
+  <rdf:li rdf:resource="http://eventos.barrapunto.com/article.pl?sid=15/04/07/2117252&amp;from=rss" />
+  <rdf:li rdf:resource="http://barrapunto.com/article.pl?sid=15/03/29/210236&amp;from=rss" />
+  <rdf:li rdf:resource="http://barrapunto.com/article.pl?sid=15/03/29/165228&amp;from=rss" />
+  <rdf:li rdf:resource="http://ciberderechos.barrapunto.com/article.pl?sid=15/03/28/207232&amp;from=rss" />
+  <rdf:li rdf:resource="http://espana.barrapunto.com/article.pl?sid=15/03/26/099200&amp;from=rss" />
+  <rdf:li rdf:resource="http://eventos.barrapunto.com/article.pl?sid=15/03/25/1041230&amp;from=rss" />
+  <rdf:li rdf:resource="http://barrapunto.com/article.pl?sid=15/03/24/2246244&amp;from=rss" />
+  <rdf:li rdf:resource="http://softlibre.barrapunto.com/article.pl?sid=15/03/22/1822221&amp;from=rss" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://barrapunto.com/images/topics/topicbarrapunto.png" />
+<textinput rdf:resource="http://barrapunto.com/search.pl" />
+</channel>
+
+<image rdf:about="http://barrapunto.com/images/topics/topicbarrapunto.png">
+<title>Barrapunto</title>
+<url>http://barrapunto.com/images/topics/topicbarrapunto.png</url>
+<link>http://barrapunto.com/</link>
+</image>
+
+<item rdf:about="http://americas.barrapunto.com/article.pl?sid=15/04/09/1810202&amp;from=rss">
+<title>Obama aprueba una Orden Ejecutiva para combatir ciberataques</title>
+<link>http://americas.barrapunto.com/article.pl?sid=15/04/09/1810202&amp;from=rss</link>
+<description>Leo en Bloomberg que el presidente estadounidense Barack Obama ha calificado de 'emergencia nacional' la situaci&amp;#243;n en la que se encuentra EE.UU. frente a ciberataques externos, y por ello ha redactado una Orden Ejecutiva (PDF) en la que se dictan sanciones econ&amp;#243;micas contra aquellos que utilicen medios inform&amp;#225;ticos para atacar los intereses de EE.UU., tanto en territorio norteamericano como en el exterior. En principio, la nueva ley permitir&amp;#225; al departamento del tesoro congelar activos econ&amp;#243;micos radicados en EE.UU. de personas f&amp;#237;sicas o jur&amp;#237;dicas cuyas actividades afecten la seguridad nacional, la pol&amp;#237;tica exterior, o la econom&amp;#237;a norteamericana. Aunque el documento se ha querido presentar como un medio para combatir el espionaje de pa&amp;#237;ses extranjeros o el robo de secretos industriales y comerciales, la redacci&amp;#243;n de la orden ejecutiva supone de-facto que las personas que realizan donaciones a Snowden, Assange o cualquier otra voz contraria a las pol&amp;#237;ticas estadounidenses puedan sufir sanciones y embargos de sus cuentas en bancos norteamericanos. La respuesta inmediata ha sido un incremento en las donaciones a Snowden via Bitcoin. Adem&amp;#225;s, un ciudadano de Oregon ha llamado a la desobediencia civil contra la orden ejecutiva realizando una donaci&amp;#243;n a Snowden, y autoinculp&amp;#225;ndose de manera p&amp;#250;blica. Por otro lado, la nueva orden ejecutiva tambi&amp;#233;n podr&amp;#237;a usarse para dificultar el trabajo de los profesionales de la ciberseguridad, ya que se penaliza la tenencia de herramientas y medios tecnol&amp;#243;gicos para realizar ataques, que en muchos casos resultan ser las mismas herramientas usadas para el dise&amp;#241;o de herramientas de protecci&amp;#243;n y el estudio no belicoso de vulnerabilidades. M&amp;#225;s opiniones en Slashdot y en Hacker News.</description>
+<dc:creator>jperex (posted by nettizen)</dc:creator>
+<dc:date>2015-04-09T16:26:00+00:00</dc:date>
+<dc:subject>noticias</dc:subject>
+<slash:section>americas</slash:section>
+<slash:comments>5</slash:comments>
+<slash:hit_parade>5,5,2,1,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://barrapunto.com/article.pl?sid=15/04/08/2156241&amp;from=rss">
+<title>Crowdfunding: contruyendo un tel&#233;fono m&#243;vil open-hardware</title>
+<link>http://barrapunto.com/article.pl?sid=15/04/08/2156241&amp;from=rss</link>
+<description>Aunque existen algunos tel&amp;#233;fonos m&amp;#243;viles con sistema operativo opensource, el santo grial que persiguen los que buscan m&amp;#225;s privacidad en sus comunicaciones m&amp;#243;viles es conseguir ejecutar un firmware libre sobre el procesador baseband del tel&amp;#233;fono, que contiene el m&amp;#243;dem responsable de establecer el enlace inal&amp;#225;mbrico entre el tel&amp;#233;fono y la red celular. Este procesador es el componente m&amp;#225;s cerrado y propietario de los tel&amp;#233;fonos m&amp;#243;viles actuales, posibilitando el control remoto de nuestros tel&amp;#233;fonos y la implementaci&amp;#243;n de backdoors y mecanismos de monitorizaci&amp;#243;n sin el conocimiento del usuario del m&amp;#243;vil. Leo en la lista de correo del proyecto Replicant que se ha creado un proyecto de financiaci&amp;#243;n por crowdfunding para arrancar el desarrollo hardware del proyecto FreeCalypso, cuyo objetivo es dise&amp;#241;ar un m&amp;#243;dulo baseband Open Hardware que pueda incorporarse en otros dise&amp;#241;os libres y que ejecute un firmware completamente libre. En lugar de crear un nuevo dise&amp;#241;o desde cero, la idea es tomar como base el tel&amp;#233;fono GTA02 del proyecto Openmoko, basado en el procesador baseband Calypso de Texas Instruments que, a diferencia de los Qualcomm o Mediatek actuales, permite cargar firmwares customizados.</description>
+<dc:creator>jperex (posted by nettizen)</dc:creator>
+<dc:date>2015-04-08T21:10:00+00:00</dc:date>
+<dc:subject>hardware</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:comments>24</slash:comments>
+<slash:hit_parade>24,24,1,1,1,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://eventos.barrapunto.com/article.pl?sid=15/04/07/2117252&amp;from=rss">
+<title> Seminario eMadrid sobre 'Pensamiento Computacional'</title>
+<link>http://eventos.barrapunto.com/article.pl?sid=15/04/07/2117252&amp;from=rss</link>
+<description>pobrecito hablador nos cuenta: &amp;#171;El 17 de abril se celebra el seminario eMadrid sobre "Pensamiento Computacional" en la Universidad Rey Juan Carlos. El seminario se compone de 3 ponencias en las que se analizar&amp;#225; esta competencia desde el punto de vista educativo, investigador y emprendedor. Marcos Rom&amp;#225;n (UNED) hablar&amp;#225; de la importancia del desarrollo de esta competencia y analizar&amp;#225; una herramienta que permite su medici&amp;#243;n; Jes&amp;#250;s Moreno (Programamos y URJC) presentar&amp;#225; las &amp;#250;ltimas novedades de Dr. Scratch, una herramienta que permite analizar proyectos Scratch y que ha recibido un Google RISE Award; y Luis Carbajosa (PIXIE) hablar&amp;#225; de la start-up espa&amp;#241;ola PIXIE, un nuevo entorno de programaci&amp;#243;n visual y una plataforma web que ayuda a profesores y a alumnos a profundizar en el Pensamiento Computacional. Para acudir al evento es necesario realizar un registro (gratuito). La red eMadrid es un proyecto subvencionado por la Comunidad de Madrid que fomenta la investigaci&amp;#243;n y el desarrollo de tecnolog&amp;#237;as de apoyo al aprendizaje (Technology-Enhanced Learning). Coordinado por la Universidad Carlos III de Madrid, tiene como socios a las universidades Aut&amp;#243;noma de Madrid, Complutense de Madrid, Polit&amp;#233;cnica de Madrid, Rey Juan Carlos y UNED, adem&amp;#225;s de participar otras universidades y empresas del sector como entes asociados.&amp;#187;</description>
+<dc:creator>nettizen</dc:creator>
+<dc:date>2015-04-07T20:36:00+00:00</dc:date>
+<dc:subject>computacion</dc:subject>
+<slash:section>eventos</slash:section>
+<slash:comments>13</slash:comments>
+<slash:hit_parade>13,9,0,0,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://barrapunto.com/article.pl?sid=15/03/29/210236&amp;from=rss">
+<title>Campa&#241;a #DejenDeSeguirme contra el espionaje masivo</title>
+<link>http://barrapunto.com/article.pl?sid=15/03/29/210236&amp;from=rss</link>
+<description>Amnist&amp;#237;a Internacional ha lanzado la campa&amp;#241;a #DejenDeSeguirme para llamar la atenci&amp;#243;n sobre el espionaje masivo que Estados Unidos y sus aliados hacen sobre nuestra actividad en la Red. Se basan en los testimonios de Edward Snowden. Por nuestra parte, podemos enviar una petici&amp;#243;n a los gobiernos de Estados Unidos, Reino Unido, Canad&amp;#225;, Australia y Nueva Zelanda.</description>
+<dc:creator>Ricardo Estalm&#225;n (posted by nettizen)</dc:creator>
+<dc:date>2015-03-30T05:18:00+00:00</dc:date>
+<dc:subject>privacidad</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:comments>24</slash:comments>
+<slash:hit_parade>24,24,12,10,3,1,1</slash:hit_parade>
+</item>
+
+<item rdf:about="http://barrapunto.com/article.pl?sid=15/03/29/165228&amp;from=rss">
+<title>Un equipo de baloncesto alem&#225;n desciende por culpa de una actualizaci&#243;n de Windows</title>
+<link>http://barrapunto.com/article.pl?sid=15/03/29/165228&amp;from=rss</link>
+<description>Un pobrecito hablador nos cuenta: &amp;#171;El descenso m&amp;#225;s doloroso quiz&amp;#225; no sea el que se produce en el &amp;#250;ltimo segundo de un partido, porque la segunda divisi&amp;#243;n del baloncesto alem&amp;#225;n ha vivido uno m&amp;#225;s cruel si cabe: el que sufri&amp;#243; el Paderborn Baskets, que se va a tercera por culpa de una actualizaci&amp;#243;n de Windows, seg&amp;#250;n el portal Ars Technica. Ocurri&amp;#243; en el partido entre el Paderborn y el Chemnitz Niners. El ordenador que estaba conectado al marcador electr&amp;#243;nico se 'colg&amp;#243;' y tuvo que ser reiniciado. Pero hete aqu&amp;#237; que Windows ten&amp;#237;a actualizaciones pendientes, y el reinicio dur&amp;#243; 25 minutos. El partido se desarroll&amp;#243; con normalidad y el Paderborn gan&amp;#243; 69-62. Pero el Chemnitz, con el reglamento en la mano, reclam&amp;#243; a la liga, ya que la competici&amp;#243;n s&amp;#243;lo permite retrasos de 15 minutos. Por eso, la liga dio la raz&amp;#243;n al Chemnitz y sancion&amp;#243; al Paderborn con un punto menos en la clasificaci&amp;#243;n. Este punto menos supone el descenso del Paderborn a la tercera categor&amp;#237;a del basket teut&amp;#243;n. El manager general del equipo, Patrick Seidel, ha dicho que no se puede culpar de nada al Chemnitz, pero dice que no pueden ser culpables ya que ellos no activaron las actualizaciones.&amp;#187; Fuente: German pro basketball team relegated to lower division due to Windows update - Ars Technica, via Un equipo de baloncesto alem&amp;#225;n desciende por culpa de una actualizaci&amp;#243;n de Windows - 20 Minutos</description>
+<dc:creator>Wayfarer</dc:creator>
+<dc:date>2015-03-29T15:38:00+00:00</dc:date>
+<dc:subject>noticias</dc:subject>
+<slash:department>Deportes-en-Barrapunto</slash:department>
+<slash:section>mainpage</slash:section>
+<slash:comments>90</slash:comments>
+<slash:hit_parade>90,90,42,17,2,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://ciberderechos.barrapunto.com/article.pl?sid=15/03/28/207232&amp;from=rss">
+<title>Seis a&#241;os de prisi&#243;n por colgar peri&#243;dicos en internet</title>
+<link>http://ciberderechos.barrapunto.com/article.pl?sid=15/03/28/207232&amp;from=rss</link>
+<description>Leo en Xataka que la Audiencia Nacional ha condenado a los administradores de Youkioske.com por colgar en su sitio web, entre 2009 y 2012, el contenido de 17000 revistas y peri&amp;#243;dicos europeos, y lucrarse mediante banners publicitarios. De los tres acusados, dos han sido condenados a seis a&amp;#241;os de prisi&amp;#243;n cada uno: tres a&amp;#241;os por delitos contra la propiedad intelectual (comunicaci&amp;#243;n p&amp;#250;blica de obras protegidas por derechos de autor) y tres a&amp;#241;os m&amp;#225;s por pertenencia a organizaci&amp;#243;n criminal. El tercer acusado ha sido absuelto por no quedar acreditado su participaci&amp;#243;n en los hechos. La secci&amp;#243;n segunda de la Sala de lo Penal ha aplicado por primera vez el tipo "agravado" para el delito contra la propiedad intelectual. Los acusados se enfrentaban a peticiones de 8 a&amp;#241;os de c&amp;#225;rcel (petici&amp;#243;n del fiscal) y de hasta 18 a&amp;#241;os (acusaciones particulares). El fiscal estimaba las p&amp;#233;rdidas ocasionadas a las editoriales en 3,7 millones de euros, y las ganancias obtenidas por publicidad en 196280 euros. La sentencia completa (n 6/2015) puede descargarse aqu&amp;#237;. El fallo es recurrible ante el Supremo. Adem&amp;#225;s de las penas de prisi&amp;#243;n, se les impone "inhabilitaci&amp;#243;n durante cinco a&amp;#241;os para el ejercicio de las profesiones de administrador de servidores y gestor de contenidos". AEDE y CEDRO se muestran muy satisfechos ante la decisi&amp;#243;n del tribunal. La noticia aparece en diversos medios de comunicaci&amp;#243;n espa&amp;#241;oles, tomando como base la nota de prensa de Europa Press. Podemos encontrar valoraciones detalladas de la sentencia en Juridicas.com y en Lupicinio.com.</description>
+<dc:creator>jperex (posted by Wayfarer)</dc:creator>
+<dc:date>2015-03-28T20:23:00+00:00</dc:date>
+<dc:subject>pasta</dc:subject>
+<slash:department>...And-Justice-for-All</slash:department>
+<slash:section>ciberderechos</slash:section>
+<slash:comments>27</slash:comments>
+<slash:hit_parade>27,26,10,7,4,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://espana.barrapunto.com/article.pl?sid=15/03/26/099200&amp;from=rss">
+<title>Folleto 'Anonim&#237;zate' de la exposici&#243;n 'Big Bang Data'</title>
+<link>http://espana.barrapunto.com/article.pl?sid=15/03/26/099200&amp;from=rss</link>
+<description>La Fundaci&amp;#243;n Telef&amp;#243;nica, en su sede de la Gran V&amp;#237;a de Madrid, ofrece hasta el 24 de mayo la exposici&amp;#243;n Big Bang Data sobre los datos masivos. En su web encuentro el folleto en PDF 'Anonim&amp;#237;zate: Manual de autodefensa electr&amp;#243;nica' sobre los riesgos del espionaje y la vigilancia. Especialmente pr&amp;#225;cticas son las p&amp;#225;ginas 12 y 13 con una lista de alternativas menos inseguras a herramientas comunes de la inform&amp;#225;tica y las comunicaciones. La lista no pretende ser exhaustiva ni definitiva pero es un buen punto de partida. &amp;#191;A&amp;#241;adir&amp;#237;as algo?</description>
+<dc:creator>Ricardo Estalm&#225;n (posted by nettizen)</dc:creator>
+<dc:date>2015-03-26T08:27:00+00:00</dc:date>
+<dc:subject>seguridad</dc:subject>
+<slash:section>es</slash:section>
+<slash:comments>19</slash:comments>
+<slash:hit_parade>19,19,7,5,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://eventos.barrapunto.com/article.pl?sid=15/03/25/1041230&amp;from=rss">
+<title>25 de marzo, D&#237;a del Documento Libre</title>
+<link>http://eventos.barrapunto.com/article.pl?sid=15/03/25/1041230&amp;from=rss</link>
+<description>ignacio.agullo nos cuenta: &amp;#171;Como todos los a&amp;#241;os desde 2008 a finales de marzo, la Fundaci&amp;#243;n para la Programaci&amp;#243;n Libre de Europa convoca el D&amp;#237;a del Documento Libre. Se organizan eventos por todo el mundo para promover los est&amp;#225;ndares abiertos para la codificaci&amp;#243;n de datos, permitiendo que cualquier programador pueda crear sus propias herramientas para trabajar con los datos o para convertirlos de formato. Es una celebraci&amp;#243;n relacionada con la compatibilidad, pues lo que se trata de evitar es perder los datos que est&amp;#225;n codificados de forma indocumentada cuando el formato se queda sin soporte. Para los seguidores de las Celebraciones TIC Internacionales, la Asociaci&amp;#243;n de T&amp;#233;cnicos de Inform&amp;#225;tica mantiene un Calendario de celebraciones internacionales dedicadas a las Tecnolog&amp;#237;as de la Informaci&amp;#243;n y las Comunicaciones.&amp;#187;</description>
+<dc:creator>nettizen</dc:creator>
+<dc:date>2015-03-25T09:36:00+00:00</dc:date>
+<dc:subject>noticias</dc:subject>
+<slash:section>eventos</slash:section>
+<slash:comments>5</slash:comments>
+<slash:hit_parade>5,5,1,0,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://barrapunto.com/article.pl?sid=15/03/24/2246244&amp;from=rss">
+<title>Los Windows 'sin licencia' podr&#225;n actualizarse a Windows 10</title>
+<link>http://barrapunto.com/article.pl?sid=15/03/24/2246244&amp;from=rss</link>
+<description>Leo en Ars Technica que Terry Myerson, jefe de sistemas operativos de Microsoft, ha anunciado que cuando se lance la versi&amp;#243;n definitiva de Windows 10, los sistemas Windows 7 y Windows 8.1 podr&amp;#225;n actualizarse a Windows 10 de manera gratuita. La noticia tiene una segunda parte, y es que la actualizaci&amp;#243;n gratuita tambi&amp;#233;n podr&amp;#225;n hacerla los sistemas que funcionan sin licencia, aunque en este caso la licencia permanecer&amp;#225; en estado 'non-genuine' y sin soporte. Los portavoces de Microsoft, sin embargo, no han querido aclarar en qu&amp;#233; estado funcional quedar&amp;#237;an los Windows 'sin licencia' as&amp;#237; actualizados; si nos basamos en los actuales Windows 8 'sin licencia' tendr&amp;#237;amos un sistema funcional durante 30 d&amp;#237;as, pasados los cuales el sistema se apagar&amp;#237;a cada vez que se superase una hora de funcionamiento continuado. El anuncio se realiz&amp;#243; durante la &amp;#250;ltima feria WinHEC, celebrada en China. &amp;#191;Nos acercamos a un modelo 'Windows-as-a-service' con sistema operativo gratuito, en el que el grueso del negocio sean las aplicaciones de bajo coste (como en el caso de los m&amp;#243;viles) y el hardware (como en el caso de Apple)? M&amp;#225;s opiniones en Slashdot (noticia sobre la actualizaci&amp;#243;n gratuita, noticia sobre la falta de soporte tras la actualizaci&amp;#243;n).</description>
+<dc:creator>jperex (posted by nettizen)</dc:creator>
+<dc:date>2015-03-24T22:02:00+00:00</dc:date>
+<dc:subject>microsoft</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:comments>36</slash:comments>
+<slash:hit_parade>36,35,11,4,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://softlibre.barrapunto.com/article.pl?sid=15/03/22/1822221&amp;from=rss">
+<title>Windows 10 y Secure Boot, vuelta a las andadas</title>
+<link>http://softlibre.barrapunto.com/article.pl?sid=15/03/22/1822221&amp;from=rss</link>
+<description>El protocolo 'Secure Boot' es una extensi&amp;#243;n de UEFI que s&amp;#243;lo permite la carga de 'bootloaders' que est&amp;#233;n firmados con una clave de plataforma, para impedir as&amp;#237; el arranque de sistemas infectados por algunos tipos de 'malware' y mejorar la seguridad del usuario. Cuando Microsoft present&amp;#243; su sistema operativo Windows 8 a finales de 2012, las condiciones de su programa de certificaci&amp;#243;n de 'hardware' cambiaron para incluir 'UEFI Secure Boot' como requisito, lo que origin&amp;#243; un fuerte rechazo de la comunidad de software libre. Microsoft esquiv&amp;#243; las protestas haciendo que Secure Boot apareciese como 'desactivable por el usuario local' en sus requisitos de certificaci&amp;#243;n para plataformas x86, aunque oblig&amp;#243; a tener un 'Secure Boot' no desactivable en dispositivos ARM. La situaci&amp;#243;n en la que qued&amp;#243; Linux desde entonces se resume en este an&amp;#225;lisis de la FSF y esta recomendaci&amp;#243;n de The Linux Foundation. Esta situaci&amp;#243;n puede cambiar. Leo en ArsTechnica y ExtremeTech que durante la &amp;#250;ltima feria WinHEC celebrada en China, Microsoft ha anunciado cambios en los requisitos de certificaci&amp;#243;n de 'hardware' exigidos a los fabricantes para obtener el nuevo logo 'Designed for Windows 10': la exigencia de un m&amp;#233;todo de desactivaci&amp;#243;n de 'Secure Boot' pasar&amp;#225; de 'obligatorio' a 'opcional', dej&amp;#225;ndolo a criterio de los fabricantes. Para algunos, este cambio facilitar&amp;#225; la aparici&amp;#243;n de hardware de escritorio 'Windows-only', imposible de usar con sistemas operativos libres, algo que ya sucede con el 'hardware' m&amp;#243;vil. Los m&amp;#225;s pesimistas vaticinan que el siguiente paso ser&amp;#225; que 'Secure Boot' no pueda desactivarse, incluso en sistemas x86. M&amp;#225;s opiniones en Hacker News y Slashdot.</description>
+<dc:creator>jperex (posted by nettizen)</dc:creator>
+<dc:date>2015-03-22T17:37:00+00:00</dc:date>
+<dc:subject>microsoft</dc:subject>
+<slash:section>softlibre</slash:section>
+<slash:comments>58</slash:comments>
+<slash:hit_parade>58,58,21,10,1,0,0</slash:hit_parade>
+</item>
+
+<textinput rdf:about="http://barrapunto.com/search.pl">
+<title>Search Barrapunto</title>
+<description>Search Barrapunto stories</description>
+<name>query</name>
+<link>http://barrapunto.com/search.pl</link>
+</textinput>
+
+</rdf:RDF>

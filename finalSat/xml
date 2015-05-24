@@ -1,0 +1,7 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 16, 2015 - 21:04:10
+Django version 1.7.7, using settings 'finalSat.settings'
+Starting development server at http://127.0.0.1:1234/
+Quit the server with CONTROL-C.

@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Evento !</title>
+		<style type="text/css">
+			body {
+
+	            font-family: Georgia, "Times New Roman",Times, serif;
+	            background-image: url("http://www.gorsegnerbrothers.com/wp-content/themes/organic_theme_ocean/images/white-fade.png");
+	            background-border: red 5px double;
+	            background-size: 100% 100%;
+	            background-repeat:  repeat-y;
+	            background-position: 50% 50%;
+	            background-attachment: fixed;
+	            background-color: transparent;;
+
+	            }
+			#menu{
+	            position: fixed;
+	            right:10;
+	            top:0px;
+	            width:100px;
+	            border-top: 1px solid #ff9999;
+	            border-right: 2px solid #99ff99;   
+	            border-bottom: 2px solid #9999ff;
+	            border-left: 4px solid #666666;
+	            text-align:center;
+	            background-color:{{lista.color}};
+
+
+	            }
+	         p {
+	            font: oblique 120% sans-serif bold; 
+	            color: {{lista.color}};
+	         }
+	         #misEventos{
+            
+	            width: 60%;
+	            float: left;
+	            margin: 0px 0px 0px 0px;
+	            text-align: justify;
+	            font-size: default;
+	         }
+		</style>
+	</head>
+	<body>
+		<div id = 'login'>
+			{%if dentro%}
+					<p>Bienvenid@:{{usuario}}</p>
+					<p><a href="http://localhost:1234/expulsar/">Logout</a></p>
+			{%endif%}
+		</div>
+
+		<div id='banner'>
+			<center>
+				<img src="https://lh3.googleusercontent.com/-hhVbNENRIUg/U7P4scJmQiI/AAAAAAAAAQg/Tn1I8T5lI3Q/w800-h240/Banner%2BForo%2BAudiovisual%2B%2528Arte-Cultura-Ocio%2529.jpg" border=0 Height=300></img>
+			</center>
+		</div>
+		<div id = 'misEventos'>
+			<p><strong>Nombre del evento:</strong> {{evento.titulo}}</p>
+			<p><strong>Fecha:</strong> {{evento.fecha}}</p>
+			<p><strong>Precio del evento:</strong> {{evento.precio}}</p>
+			<p><strong>Duracion del evento hasta :</strong> {{evento.duracion}}</p>
+			<p><strong>Tipo de evento:</strong> {{evento.tipo}}</p>
+			<p><a href="{{evento.url}}">Mas informacion</p>
+			<p><a href="http://localhost:1234/seleccionar/{{evento.id}}" style="color:green">Seleccionar</a></p>
+		</div>
+		<div id = 'menu' >
+			<p><strong>MENU</strong></p>
+			<p><a href="http://localhost:1234/todas/" style="color:red">Todos</a></p>
+			<p><a href="http://localhost:1234/" style="color:red">Inicio</a></p>
+			<p><a href="http://localhost:1234/ayuda/" style="color:red">Ayuda</a></p>
+			{%if dentro %}
+				<p><a href="http://localhost:1234/{{usuario}}" style="color:red">Mi pagina</a></p>
+			{%endif%}
+		</div>
+		
+		<div id="copy">
+            <strong>&copy; 2015 Jhon Fajardo Rodas</strong>
+        </id>
+            
+	</body>
+
+</html>

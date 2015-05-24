@@ -1,0 +1,71 @@
+def  login (request):
+    if request.user.is_authenticated():
+        return ("<br>You're: " + request.user.username +
+                "<br><a href='/admin/logout/'>Logout</a>")
+    else:
+        return ("<br>You aren't registred\n<a href='/admin/'>Login</a>")
+    
+def principal(request):
+	
+    fich = urllib.urlopen("http://datos.madrid.es/portal/site/egob/menuitem.ac61933d6ee3c31cae77ae7784f1a5a0/?vgnextoid=00149033f2201410VgnVCM100000171f5a0aRCRD&"+
+                            "format=xml&file=0&filename=206974-0-agenda-eventos-culturales-100&mgmtid=6c0b6d01df986410VgnVCM2000000c205a0aRCRD");
+
+    allXml = BeautifulSoup(fich, "xml")
+    eventos = allXml.findAll('contenido')
+    titulos = []
+    fechas = []
+    precios = []
+    urls = []
+    horas = []
+    duracion = []
+    tipo = []
+    num_eventos = len(eventos)
+    line = 0
+    for line in range(num_eventos):
+        titulos = eventos[line].find(nombre='TITULO').string
+        fechasX = eventos[line].find(nombre='FECHA-EVENTO').string.split(" ")[0]
+        #precios += eventos[line].find(nombre='PRECIO')
+        urls = eventos[line].find(nombre='CONTENT-URL')
+        horasX = eventos[line].find(nombre='HORA-EVENTO').string
+        fechas = fechasX+ " " + horasX 
+        horas = fechasX+ " " + horasX
+        duracion = eventos[line].find(nombre='FECHA-FIN-EVENTO').string
+        try:
+            tipo = eventos[line].find(nombre='TIPO').string
+        except:
+            tipo = "evento"
+        try:
+            precios = eventos[line].find_all(nombre='PRECIO').string
+        except:
+            precios = "gratuito"
+        
+        entrada = principalDB(titulo=titulos, fecha=fechas, precio=precios, hora=horas, duracion=duracion, url= urls, tipo=tipo)
+        entrada.save()
+	
+    
+    num_titulos = len(titulos)
+    num_fechas = len(fechas)
+    num_precios = len(precios)
+    num_horas = len(horas)
+    allEventos = principalDB.objects.all()
+
+    '''
+        Mostramos la pagina principal:
+    '''
+    if (request.method == 'GET'):
+        salida = login(request) + "<p><p><h1>EVENTOS:</h1></p>"
+        for fila in allEventos:
+            salida +=  ("Titulo: " + fila.titulo + "\n  <p>Fecha y hora: " + str(fila.fecha).split(":00+")[0] + " horas")
+        
+            salida += "</p></p>"
+    else:
+        if request.user.is_authenticated():
+            usuario = usrDB(login=request.user.username, password=request.user.password)
+            usuario.save()
+            salida = "logueado"
+        else:
+            login(request)
+        
+
+    allEventos.delete()
+    return HttpResponse(salida)

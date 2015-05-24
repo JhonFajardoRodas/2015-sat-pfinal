@@ -1,0 +1,168 @@
+<html>
+   <head>
+      <title>Evento !</title>
+      <style type="text/css">
+            body {
+
+            font-family: Georgia, "Times New Roman",Times, serif;
+            background-image: url("http://www.gorsegnerbrothers.com/wp-content/themes/organic_theme_ocean/images/white-fade.png");
+            background-border: red 5px double;
+            background-size: 100px 50px;
+            background-size: 65% 85%;
+            background-repeat:  repeat-y;
+            background-position: 50% 50%;
+            background-attachment: fixed;
+            background-color: default;
+            color: {{lista.color}};
+            
+
+
+            }
+
+         p {
+            font: oblique 120% sans-serif bold; 
+            color: {{lista.color}};
+         }
+
+               
+         #menu{
+            position: fixed;
+            right:10;
+            top:0px;
+            width:100px;
+            border-top: 1px solid #ff9999;
+            border-right: 2px solid #99ff99;   
+            border-bottom: 2px solid #9999ff;
+            border-left: 4px solid #666666;
+            text-align:center;
+            background-color:{{lista.color}};
+
+
+            }
+         #misEventos{
+            
+            width: 60%;
+            float: left;
+            margin: 0px 0px 0px 0px;
+            text-align: justify;
+            font-size: {{lista.size}};
+
+         }
+         #horas{
+            
+            width: 30%;
+            float: left;
+            margin: 0px 0px 0px 0px;
+            text-align: justify;
+            font-size: {{lista.size}};
+
+         }
+         #copy{
+            width: 60%;
+            float: left;
+            margin: 0px 0px 0px 0px;
+            text-align: justify;
+            background-color: {{lista.color}};
+         }
+         #login{
+            background-color: {{lista.color}};
+         }
+         #banner{
+            border-color: {{lista.color}};
+         }
+         #info{
+
+         }
+
+        
+      </style>
+      <link rel="alternate" title="Cristalab RSS" href="/home/esquil17/Desktop/finalSat/plantillas/canal.rss" type="application/rss+xml">
+
+   </head>
+   <body>
+         <div id="login">
+            {%if dentro%}
+               <p>Bienvenid@:{{usuario}}</p>
+               <p><a href="http://localhost:1234/expulsar/">Logout</a></p>
+            {%else%}
+               {%if otro %}
+                  <p>Bienvenid@:{{usuario}}</p>
+                  <p><a href="http://localhost:1234/expulsar/">Logout</a></p>
+               {%else%}
+                  <p><a href="http://localhost:1234/loguear/">Login</a></p>
+               {%endif%}
+            {%endif%}
+         </div>
+         <div id="banner">
+            <center>
+            <img src="https://lh3.googleusercontent.com/-hhVbNENRIUg/U7P4scJmQiI/AAAAAAAAAQg/Tn1I8T5lI3Q/w800-h240/Banner%2BForo%2BAudiovisual%2B%2528Arte-Cultura-Ocio%2529.jpg" border=10 Height=300></img>
+            </center>
+         </id>
+         <div id="menu">
+            <p><strong>MENU</strong></p>
+            <p><a href="http://localhost:1234/todas/" style="color:red">Todos</a></p>
+            <p><a href="http://localhost:1234/" style="color:red">Inicio</a></p>
+            <p><a href="http://localhost:1234/ayuda/" style="color:red">Ayuda</a></p>
+         </div>
+         <div id='info'>
+               <p>Pagina de: {{lista.nombre}}</p>
+               <p>Titulo: {{lista.tituloPag}}</p>
+               {%if dentro%}
+                  <form action="/cambioTitulo" method="POST">
+                  <input type= "text" name="title">
+                  <input type="submit" value="Cambiar titulo">
+                  </form>
+               {%endif%}
+               
+               <p>Descripcion:{{lista.descripcion}}</p>
+               {%if dentro%}
+                  <form action="/cambioTitulo" method="POST">
+                  <input type= "text" name="description">
+                  <input type="submit" value="nueva descripcion">
+                  </form>
+               {%endif%}
+               {%if dentro%}
+                  <p>Editar pagina:</p>
+                  <form action="/cambioTitulo" method="POST">
+                  <input type= "text" name="color">
+                  <input type="submit" value="color">
+                  </form>
+               {%endif%}
+               {%if dentro%}
+                  <form action="/cambioTitulo" method="POST">
+                  <input type= "text" name="letra">
+                  <input type="submit" value="letra">
+                  </form>
+               {%endif%}
+               
+              <p><a type="application/rss+xml" href="http://localhost:1234/{{lista.nombre}}/rss">RSS</a></p>
+         </div>
+         
+         <div id="misEventos">
+
+            <p><Strong>Mis eventos:</strong></p>
+            {% for line in eventos %}
+               <p><h2>Titulo del evento:{{line.titulo}}</h2></p>
+               <p>Fecha del evento:{{line.fecha}}</p>
+               <p>Evento: <a href="http://localhost:1234/actividades/{{line.id}}">{{line.titulo}}</a></p>
+            {%endfor%}
+         </div>
+         <div id="horas">
+            <p><br></p>
+            {%for hora in horas%}
+               <center><p><h1><br>Añadida el:</h1></p></center>
+               <center><p>{{hora.horaAdd}}<br></p></center>
+
+            {%endfor%}
+         </div>
+         
+         <div id="copy">
+            <strong>&copy; 2015 Jhon Fajardo Rodas</strong>
+         </id>
+            
+           
+
+
+   </body>
+
+</html>
